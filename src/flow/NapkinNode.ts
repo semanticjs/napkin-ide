@@ -1,24 +1,17 @@
+import { NapkinEdge } from "./NapkinEdge";
 
 export class NapkinNode {
   //  Fields
-  protected example?: boolean;
 
   //  Properties
-  public Example: string;
+  public ID?: NapkinEdge;
 
   //  Constructors
   constructor() {
-    this.Example = "Hello World";
   }
 
   //  API Methods
-  public ChangeExample(example: string): void {
-    this.Example = example;
-  }
 
   //  Helpers
-  protected toggleExample() {
-    this.example = !this.example;
-  }
 }
     
