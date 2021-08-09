@@ -1,22 +1,23 @@
-import { NapkinEdge } from "./NapkinEdge.js";
-import { NapkinNode } from "./NapkinNode.js";
+import { NapkinEdge } from './NapkinEdge.js';
+import { NapkinNode } from './NapkinNode.js';
 
+/*
+ * The main data model describing flow nodes, edges, and their relationships.
+ */
 export class NapkinFlow {
-  //  Fields
+    //  Fields
 
-  //  Properties
-  public Edges?: NapkinEdge[];
+    //  Properties
+    public Edges?: NapkinEdge[];
 
-  public ID?: string;
+    public ID?: string;
 
-  public Nodes?: NapkinNode[];
+    public Nodes?: NapkinNode[];
 
-  //  Constructors
-  constructor() {
-  }
+    //  Constructors
+    constructor() {}
 
-  //  API Methods
+    //  API Methods
 
-  //  Helpers
+    //  Helpers
 }
-    

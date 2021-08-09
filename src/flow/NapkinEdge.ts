@@ -1,13 +1,15 @@
-
+/* 
+* Describing the relationship between two nodes.
+*/
 export class NapkinEdge {
   //  Fields
 
   //  Properties
-  public EdgeIn?: NapkinEdge;
+  public NodeInID?: string;
 
-  public EdgeOut?: NapkinEdge;
+  public NodeOutID?: string;
 
-  public ID?: NapkinEdge;
+  public ID?: string;
 
   //  Constructors
   constructor() {

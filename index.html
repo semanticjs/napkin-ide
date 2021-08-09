@@ -7,10 +7,7 @@
 
         <!-- SEO Setup -->
         <title></title>
-        <meta
-            name="description"
-            content="Demo of Napkin IDE."
-        />
+        <meta name="description" content="Demo of Napkin IDE." />
 
         <!-- Stylesheets -->
         <link
@@ -23,8 +20,7 @@
         <script type="module" src="./packages/es/index.js"></script>
     </head>
     <body>
-        <div class="napkin-ide">
-        </div>
+        <div class="napkin-ide"></div>
 
         <script id="sjs-startup" type="module">
             import { NapkinIDE } from './packages/es/index.js';
@@ -32,7 +28,23 @@
             const npknIde = new NapkinIDE();
 
             npknIde.Flow = {
-                
+                Nodes: [
+                    {
+                        ID: '1',
+                    },
+                ],
+                Edges: [
+                    {
+                        NodeInID: '1',
+                        NodeOutID: '1',
+                    },
+                ],
+            };
+
+            npknIde.Config = {
+                ZoomToFit: true,
+                DragToResize: true,
+                DisplayBankByDefault: true
             };
 
             npknIde.Mount('.napkin-ide');
