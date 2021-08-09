@@ -1,10 +1,8 @@
-import { NapkinEdge } from "./NapkinEdge";
-
 export class NapkinNode {
   //  Fields
 
   //  Properties
-  public ID?: NapkinEdge;
+  public ID?: string;
 
   //  Constructors
   constructor() {
