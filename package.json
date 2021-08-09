@@ -9,11 +9,12 @@
     "build:es": "tsc -p tsconfig.es.json",
     "build:cjs": "tsc -p tsconfig.cjs.json",
     "deploy": "npm version patch && npm run deploy:all",
-    "deploy:all": "rimraf packages && npm run build && npm publish ./packages --access public",
+    "deploy:all": "rimraf packages && npm run build && npm publish --access public",
     "test:coverage": "jest --coverage",
     "watch": "npm run watch:es",
     "watch:es": "tsc -p tsconfig.es.json -w",
-    "watch:cjs": "tsc -p tsconfig.cjs.json -w"
+    "watch:cjs": "tsc -p tsconfig.cjs.json -w",
+    "start": "http-server"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "@types/jest": "^26.0.24",
     "@types/node": "^16.4.13",
     "concurrently": "^6.2.0",
+    "http-server": "^13.0.0",
     "jest": "^27.0.6",
     "rimraf": "^3.0.2",
     "ts-jest": "^27.0.4",
