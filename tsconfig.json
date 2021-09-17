@@ -1,1 +1,18 @@
-{"compilerOptions":{"target":"es2017","module":"es2020","outDir":"./packages","declaration":true,"strict":true,"esModuleInterop":true,"skipLibCheck":true,"forceConsistentCasingInFileNames":true,"experimentalDecorators":true,"emitDecoratorMetadata":true},"include":["./src"]}
+{
+  "compilerOptions": {
+    "rootDir": "./",
+    "target": "es2018",
+    "module": "esnext",
+    "outDir": "./dist",
+    "declaration": true,
+    "noEmitOnError": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": false,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["./src"]
+}

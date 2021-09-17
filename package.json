@@ -2,19 +2,22 @@
   "name": "@semanticjs/napkin-ide",
   "version": "0.0.0",
   "description": "Low/No Code tooling for the automation of things.",
-  "main": "./packages/cjs/common.js",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.esm.js",
+  "typings": "./dist/src/index.d.ts",
+  "files": [
+    "dist/"
+  ],
   "scripts": {
-    "test": "jest",
-    "build": "concurrently \"npm run build:es\" \"npm run build:cjs\"",
-    "build:es": "tsc -p tsconfig.es.json",
-    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build": "npm run clean && npm run rollup",
+    "clean": "rimraf dist",
     "deploy": "npm version patch && npm run deploy:all",
-    "deploy:all": "rimraf packages && npm run build && npm publish --access public",
-    "test:coverage": "jest --coverage",
-    "watch": "npm run watch:es",
-    "watch:es": "tsc -p tsconfig.es.json -w",
-    "watch:cjs": "tsc -p tsconfig.cjs.json -w",
-    "start": "http-server"
+    "deploy:all": "npm run build && npm publish --access public",
+    "rollup": "rollup -c",
+    "start": "http-server",
+    "test": "jest",
+    "test:coverage": "npm run test -- --coverage",
+    "watch": "npm run rollup -- -w"
   },
   "repository": {
     "type": "git",
@@ -34,15 +37,13 @@
     "http-server": "^13.0.0",
     "jest": "^27.0.6",
     "rimraf": "^3.0.2",
+    "rollup": "^2.56.3",
+    "rollup-plugin-typescript2": "^0.30.0",
     "ts-jest": "^27.0.4",
     "ts-node": "^10.1.0",
     "typescript": "^4.3.5"
   },
   "dependencies": {
-    "@semanticjs/common": "^0.0.15"
-  },
-  "module": "./packages/es/common.js",
-  "files": [
-    "packages/"
-  ]
+    "@semanticjs/common": "^0.0.17"
+  }
 }

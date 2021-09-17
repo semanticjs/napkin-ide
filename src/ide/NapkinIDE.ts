@@ -1,4 +1,4 @@
-import { NapkinFlow } from './flow/NapkinFlow';
+import { NapkinFlow } from '../flow/NapkinFlow';
 function SJSElement<T extends { new (...args: any[]): any }>(constructor: T) {
   return class extends constructor {
       //  Fields
