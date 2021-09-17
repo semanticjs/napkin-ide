@@ -15,7 +15,7 @@ export class NapkinIDENodeConfig {
   /**
    * The classes that will be placed on the node every time.
    */
-   public ClassList?: string;
+   public ClassList?: Array<string>;
 
   /**
    * The HTML template ID to use for rendering the node.
@@ -26,6 +26,8 @@ export class NapkinIDENodeConfig {
    * The limit on input connections.  -1 for unlimited.
    */
   public InputCountLimit?: number;
+
+  //  public Layout?: 'simlane' | 'vertical-tree' | 'horizontal-tree';// | LayoutService;
 
   /**
    * The limit on output connections.  -1 for unlimited.

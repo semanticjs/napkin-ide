@@ -5,7 +5,7 @@ export class NapkinIDENode {
   /**
    * The classes that will be used and persisted on specific nodes.
    */
-  public ClassList?: string;
+  public ClassList?: Array<string>;
 
   /**
    * Node instance specific data.
