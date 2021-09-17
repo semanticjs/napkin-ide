@@ -1,10 +1,14 @@
-/* 
-* Describing the relationship between two nodes.
-*/
-export class NapkinEdge {
+/*
+ * Defines the connections between two nodes.
+ */
+export class NapkinIDEEdge {
   //  Fields
 
   //  Properties
+  public ClassList?: string;
+
+  public Name?: string;
+
   public NodeInID?: string;
 
   public NodeOutID?: string;
@@ -12,11 +16,9 @@ export class NapkinEdge {
   public ID?: string;
 
   //  Constructors
-  constructor() {
-  }
+  constructor() {}
 
   //  API Methods
 
   //  Helpers
 }
-    

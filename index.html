@@ -22,30 +22,42 @@
   <body>
     <div class="napkin-ide"></div>
 
+    <template id="request-template">
+      <div class="request-node">{{ Text }}</div>
+    </template>
+
+    <template id="request-template">
+      <div class="route-node">{{ Path }}</div>
+    </template>
+
     <script id="sjs-startup" type="module">
-      import { NapkinIDE } from './packages/es/index.js';
+      import { NapkinIDE, NapkinIDEConfig } from './packages/es/index.js';
 
-      const npknIde = new NapkinIDE();
+      const config = new NapkinIDEConfig();
+      config.NodeTypes = {};
+      config.NodeTypes['request'] = new NapkinIDENodeConfig();
+      config.NodeTypes['request'].HTMLTemplateID = "request-template";
 
-      npknIde.Flow = {
+      const npknIde = new NapkinIDE(config);
+
+      npknIde.ImportFlow({
         Nodes: [
           {
             ID: '1',
+            Type: 'request'
+          },
+          {
+            ID: '2',
+            Type: 'project'
           },
         ],
         Edges: [
           {
             NodeInID: '1',
-            NodeOutID: '1',
+            NodeOutID: '2',
           },
         ],
-      };
-
-      npknIde.Config = {
-        ZoomToFit: true,
-        DragToResize: true,
-        DisplayBankByDefault: true,
-      };
+      });
 
       npknIde.Mount('.napkin-ide');
     </script>

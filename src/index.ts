@@ -1,6 +1,5 @@
-import { NapkinEdge } from './flow/NapkinEdge'
-import { NapkinNode } from './flow/NapkinNode'
-import { NapkinFlow } from './flow/NapkinFlow'
-import { NapkinIDE } from './ide/NapkinIDE'
-
-export { NapkinEdge, NapkinNode, NapkinFlow, NapkinIDE };
+export * from './flow/NapkinIDEEdge'
+export * from './flow/NapkinIDENode'
+export * from './flow/NapkinIDEFlow'
+export * from './ide/NapkinIDE'
+export * from './ide/NapkinIDEConfig'
