@@ -27,6 +27,11 @@ export class NapkinIDENodeConfig {
    */
   public InputCountLimit?: number;
 
+  /**
+   * The optional JSON schema for the Data property of a node.
+   */
+   public JSONSchema?: any;  // TODO:  Implement JSON Schema structure in semanticjs/common...  Exists in previous ref-arch, maybe already brought accross?
+
   //  public Layout?: 'simlane' | 'vertical-tree' | 'horizontal-tree';// | LayoutService;
 
   /**

@@ -1,24 +1,15 @@
+import { NapkinIDEFlow } from '..';
 
-export class NapkinIDEFlowImporter {
+export abstract class NapkinIDEFlowImporter<TData> {
   //  Fields
-  protected example?: boolean;
 
   //  Properties
-  public Example: string;
 
   //  Constructors
-  constructor() {
-    this.Example = "Hello World";
-  }
+  constructor() {}
 
   //  API Methods
-  public ChangeExample(example: string): void {
-    this.Example = example;
-  }
+  public abstract Import(data: TData): NapkinIDEFlow;
 
   //  Helpers
-  protected toggleExample() {
-    this.example = !this.example;
-  }
 }
-    
