@@ -1,4 +1,4 @@
-import { NapkinIDEFlow } from '..';
+import { NapkinIDEFlow } from '../flow/NapkinIDEFlow';
 
 export abstract class NapkinIDEFlowImporter<TData> {
   //  Fields
