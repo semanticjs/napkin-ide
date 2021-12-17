@@ -5,7 +5,7 @@ export * from './flow/NapkinIDEFlow'
 export * from './ide/NapkinIDE'
 export * from './ide/NapkinIDEConfig'
 export * from './data/NapkinIDEFlowImporter'
-export * from './data/EaCNapkinIDEFlowImporter'
+// export * from './data/EaCNapkinIDEFlowImporter'
 
 import { NapkinIDEConfig } from './ide/NapkinIDEConfig'
 export const TestNapkinIDEConfig: NapkinIDEConfig = {
