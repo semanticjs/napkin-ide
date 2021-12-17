@@ -1,6 +1,5 @@
 import { EnterpriseAsCode } from '@semanticjs/common';
 import { NapkinIDEFlow } from '..';
-// import { NapkinIDEEdge } from '../flow/NapkinIDEEdge';
 import { NapkinIDENode } from '../flow/NapkinIDENode';
 import { NapkinIDEFlowImporter } from './NapkinIDEFlowImporter';
 
