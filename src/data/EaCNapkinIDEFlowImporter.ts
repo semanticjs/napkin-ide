@@ -17,6 +17,7 @@ export class EaCNapkinIDEFlowImporter extends NapkinIDEFlowImporter<EnterpriseAs
   public Import(eac: EnterpriseAsCode): NapkinIDEFlow {
     const flow = new NapkinIDEFlow();
 
+    
     if (eac != null) {
       flow.Name = eac.Enterprise?.Name;
 
