@@ -90,7 +90,7 @@ export class EaCNapkinIDEFlowImporter extends NapkinIDEFlowImporter<EnterpriseAs
           .slice(1)
           .map((pr) =>  {
             debugger;
-            return `node-test`
+            return ``
             // return `/${pr}`
           });
 
