@@ -88,7 +88,10 @@ export class EaCNapkinIDEFlowImporter extends NapkinIDEFlowImporter<EnterpriseAs
         const routeParts = app
           .LookupConfig!.PathRegex?.split('/')
           .slice(1)
-          .map((pr) => `/${pr}`);
+          .map((pr) =>  {
+            debugger;
+            return `/${pr}shannon-test`
+          });
 
         let routePartType = 'path';
 
