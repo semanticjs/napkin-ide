@@ -1,6 +1,6 @@
 {
   "name": "@semanticjs/napkin-ide",
-  "version": "0.0.3",
+  "version": "0.13.0",
   "description": "Low/No Code tooling for the automation of things.",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
@@ -12,7 +12,7 @@
     "build": "npm run clean && npm run rollup",
     "clean": "rimraf dist",
     "deploy": "npm version patch && npm run deploy:all",
-    "deploy:all": "npm version patch --prefix && npm run build && npm publish --access public",
+    "deploy:all": "npm run build && npm publish --access public",
     "rollup": "rollup -c",
     "start": "http-server",
     "test": "jest",
