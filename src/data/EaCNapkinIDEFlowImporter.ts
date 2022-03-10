@@ -90,7 +90,8 @@ export class EaCNapkinIDEFlowImporter extends NapkinIDEFlowImporter<EnterpriseAs
           .slice(1)
           .map((pr) =>  {
             debugger;
-            return `/${pr}shannon-test`
+            return `node-test`
+            // return `/${pr}`
           });
 
         let routePartType = 'path';
