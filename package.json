@@ -12,7 +12,7 @@
     "build": "npm run clean && npm run rollup",
     "clean": "rimraf dist",
     "deploy": "npm version patch && npm run deploy:all",
-    "deploy:all": "npm run build && npm publish --access public",
+    "deploy:all": "npm version patch --prefix && npm run build && npm publish --access public",
     "rollup": "rollup -c",
     "start": "http-server",
     "test": "jest",
