@@ -57,7 +57,7 @@ export class EaCNapkinIDEFlowImporter extends NapkinIDEFlowImporter<EnterpriseAs
       const projectNode = new NapkinIDENode();
       projectNode.Type = 'project';
       // projectNode.ID = `${projectNode.Type}-${projLookup}`;
-      projectNode.ID = `${index};
+      projectNode.ID = `${index}`;
       projectNode.Data = {
         Name: project.Project?.Name,
         Hosts: project.Hosts,
