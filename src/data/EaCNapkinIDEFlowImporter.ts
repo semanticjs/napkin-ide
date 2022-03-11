@@ -50,13 +50,14 @@ export class EaCNapkinIDEFlowImporter extends NapkinIDEFlowImporter<EnterpriseAs
     flow.Edges = [];
 
     //  Process for project nodes
-    projLookups.forEach((projLookup) => {
+    projLookups.forEach((projLookup: any,index: number) => {
       const project = eac.Projects![projLookup];
 
       //  Setup Project Node
       const projectNode = new NapkinIDENode();
       projectNode.Type = 'project';
-      projectNode.ID = `${projectNode.Type}-${projLookup}`;
+     // projectNode.ID = `${projectNode.Type}-${projLookup}`;
+     projectNode.ID = `${'node-test'}-${index}`;
       projectNode.Data = {
         Name: project.Project?.Name,
         Hosts: project.Hosts,
