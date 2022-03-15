@@ -89,7 +89,11 @@ export class EaCNapkinIDEFlowImporter extends NapkinIDEFlowImporter<EnterpriseAs
           .LookupConfig!.PathRegex?.split('/')
           .slice(1)
           .map((pr) =>  {
-            debugger;
+
+            /**
+             * Comment ${pr} out, because it's adding 
+             * invalid characters to the ids
+             */
             return ``
             // return `/${pr}`
           });
