@@ -4,7 +4,7 @@ export * from './flow/NapkinIDENode'
 export * from './flow/NapkinIDEFlow'
 export * from './ide/NapkinIDE'
 export * from './ide/NapkinIDEConfig'
-export * from './data/NapkinIDEFlowImporter'
+// export * from './data/NapkinIDEFlowImporter'
 export * from './data/EaCNapkinIDEFlowImporter'
 
 import { NapkinIDEConfig } from './ide/NapkinIDEConfig'
